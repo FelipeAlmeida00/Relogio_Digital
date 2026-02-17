@@ -189,18 +189,4 @@ nav {
 }
 
 
-.container mt-2 {
-  display: flex;
-  flex-wrap: wrap; /* Permite que os cards pulem para a próxima linha */
-  gap: 20px;
-}
-.card {
-  flex: 1 1 250px; /* Cresce, encolhe e tem largura base de 250px */
-}
 
-
-@media (max-width: 600px) {
-  .container mt-2 {
-    grid-template-columns: 1fr; 
-  }
-}
