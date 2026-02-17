@@ -5,7 +5,7 @@
 }
 body{
 
-  background: url("../img/Outos/cenas.jpeg");
+  background: url("../img/Outros/cenas.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -129,16 +129,58 @@ nav {
 
 .container {
   display: flex;
-  flex-wrap: wrap; /* Permite que os cards pulem para a próxima linha */
+  flex-wrap: wrap;
   gap: 20px;
-}
-.card {
-  flex: 1 1 250px; /* Cresce, encolhe e tem largura base de 250px */
+  margin-top: 3%;
+  
+
+    & .card {
+    flex: 1 1 250px; 
+
+    & .card-title{
+
+      text-align: center;
+    }
+
+    & .card-text{
+      text-align: center;
+
+    }
 }
 
+}
 
 @media (max-width: 600px) {
   .container{
     grid-template-columns: 1fr; 
   }
 }
+
+.button{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+
+
+.button .link a{
+    color: red;
+    padding: 5px 10px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition: 200ms;
+    
+}
+
+.button .link a:hover{
+    color: black;
+    background-color: rgb(0, 206, 17);
+
+}
+
+
+
